@@ -225,6 +225,49 @@ hr {
   text-align: center;
 }
 
+/* css for room.html */
+
+.header__img3 {
+  background-image: url(img/img8.jpg);
+  border-bottom: 2px solid #333;
+}
+
+/* img section */
+
+.main__preview {
+  height: 40vh;
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "img1 img2 img3";
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  gap: 1rem;
+}
+
+.main__img--mod {
+  height: 30vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__img1 {
+  background-image: url(./img/img12.jpg);
+  grid-area: img1;
+}
+
+.main__img2 {
+  background-image: url(./img/img13.jpg);
+  grid-area: img2;
+}
+
+.main__img3 {
+  background-image: url(./img/img14.jpg);
+  grid-area: img3;
+}
+
 /* For smaller screens */
 @media screen and (max-width: 767px) {
   body {
@@ -311,6 +354,16 @@ hr {
   .room__img--mod2 {
     height: 25vh;
     width: 90%;
+  }
+
+  /* main img */
+
+  .main__preview {
+    height: 70vh;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 
