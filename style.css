@@ -16,6 +16,7 @@ body {
   color: #333;
   font-size: 1vw;
   max-width: 100vw;
+  /* min-height: 100vh; */
   font-family: "Helvetica", Arial, sans-serif;
   background-color: #f1efef;
 }
@@ -52,8 +53,11 @@ body {
 }
 
 .header__img {
-  height: 50vh;
   background-image: url(./img/img1.jpg);
+}
+
+.header__img--mod {
+  height: 50vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -129,7 +133,7 @@ hr {
   background-image: url(./img/img4.jpg);
 }
 
-.img__style {
+.room__img--mod {
   height: 50vh;
   width: 30%;
   background-position: center;
@@ -153,13 +157,81 @@ hr {
   padding: 0.3rem;
 }
 
+/* Css for rooms.html */
+
+.form {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.form__title {
+  margin: 0;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.header__img2 {
+  background-image: url(./img/img5.jpg);
+}
+
+.container__rooms3 {
+  margin-bottom: 1rem;
+}
+
+.container__rooms--mod {
+  display: flex;
+  justify-content: space-around;
+}
+
+.room__img--mod2 {
+  height: 40vh;
+  width: 25%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 1rem 0;
+  border: 1px solid black;
+}
+
+.room__img4 {
+  background-image: url(./img/img6.jpg);
+}
+.room__img5 {
+  background-image: url(./img/img7.jpg);
+}
+.room__img6 {
+  background-image: url(./img/img8.jpg);
+}
+.room__img7 {
+  background-image: url(./img/img9.jpg);
+}
+.room__img8 {
+  background-image: url(./img/img10.jpg);
+}
+.room__img9 {
+  background-image: url(./img/img11.jpg);
+}
+
+.room__text {
+  margin: 0;
+  text-decoration: underline;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
 /* For smaller screens */
 @media screen and (max-width: 767px) {
   body {
     font-size: 1rem;
   }
 
-  .header__img {
+  .header__img--mod {
     height: 25vh;
   }
 
@@ -202,7 +274,7 @@ hr {
     align-items: center;
   }
 
-  .img__style {
+  .room__img--mod {
     height: 25vh;
     width: 90%;
   }
@@ -213,6 +285,32 @@ hr {
 
   .footer * {
     padding: 0.4rem 0 0.2rem 0;
+  }
+
+  /* Css for rooms.html */
+
+  /* form */
+  .form {
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+    text-align: center;
+  }
+
+  .form__section {
+    width: 80%;
+  }
+
+  /* img rooms */
+  .container__rooms--mod {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room__img--mod2 {
+    height: 25vh;
+    width: 90%;
   }
 }
 
