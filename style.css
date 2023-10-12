@@ -159,7 +159,7 @@ hr {
 
 /* Css for rooms.html */
 
-/* .form {
+.form {
   height: 10vh;
   display: flex;
   align-items: center;
@@ -186,9 +186,9 @@ hr {
 .container__rooms--mod {
   display: flex;
   justify-content: space-around;
-} */
+}
 
-/* .room__img--mod2 {
+.room__img--mod2 {
   height: 40vh;
   width: 25%;
   background-position: center;
@@ -215,26 +215,26 @@ hr {
 }
 .room__img9 {
   background-image: url(./img/img11.jpg);
-} */
+}
 
-/* .room__text {
+.room__text {
   margin: 0;
   text-decoration: underline;
   color: #333;
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
-} */
+}
 
 /* css for room.html */
 
-/* .header__img3 {
+.header__img3 {
   background-image: url(img/img8.jpg);
   border-bottom: 2px solid #333;
-} */
+}
 
 /* img section */
 
-/* .main__preview {
+.main__preview {
   height: 40vh;
   width: 100%;
   margin: auto;
@@ -243,9 +243,9 @@ hr {
   align-items: center;
   padding: 0 1rem 0 1rem;
   gap: 1rem;
-} */
+}
 
-/* .main__img--mod {
+.main__img--mod {
   height: 30vh;
   width: 100%;
   background-position: center;
@@ -266,11 +266,11 @@ hr {
 .main__img3 {
   background-image: url(./img/img14.jpg);
   grid-area: img3;
-} */
+}
 
 /* description section */
 
-/* .description__details {
+.description__details {
   width: 50%;
   margin: auto;
   text-align: center;
@@ -302,11 +302,25 @@ hr {
 .extra__title {
   font-size: 1.3rem;
   text-align: center;
+  margin: 0;
+}
+
+.description__extra {
+  margin: auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.description__extra * {
+  margin: 0;
 }
 
 .extra__items {
-  display: flex;
-} */
+  padding: 0.3rem;
+}
 
 /* For smaller screens */
 @media screen and (max-width: 767px) {
@@ -373,7 +387,7 @@ hr {
   /* Css for rooms.html */
 
   /* form */
-  /* .form {
+  .form {
     margin: 1rem 0;
     flex-direction: column;
     align-items: center;
@@ -383,10 +397,10 @@ hr {
 
   .form__section {
     width: 80%;
-  } */
+  }
 
   /* img rooms */
-  /* .container__rooms--mod {
+  .container__rooms--mod {
     flex-direction: column;
     align-items: center;
   }
@@ -394,26 +408,39 @@ hr {
   .room__img--mod2 {
     height: 25vh;
     width: 90%;
-  } */
+  }
 
   /* main img */
 
-  /* .main__preview {
+  .main__preview {
     height: 70vh;
     width: 100%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-  } */
+  }
 
   /* main description */
 
-  /* .description__details {
+  .info__list {
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 0.2rem;
+  }
+  .info__items {
+    padding: 0.3rem;
+  }
+
+  .description__details {
     width: 80%;
     margin: auto;
     text-align: center;
     margin-top: 1rem;
-  } */
+  }
+
+  .description__extra {
+    width: 90%;
+  }
 }
 
 /* Responsive typography */
